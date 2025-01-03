@@ -206,11 +206,11 @@ function Home() {
               </div>
             </div>
             <div className="mt-32 ml-16">
-              <h1 className="font-poppins font-semibold text-4xl text-start">
+              <h1 className="text-[#004607] font-poppins font-semibold text-4xl text-start">
                 GreenStep'in Amacı: <br />
                 Doğaya Katkı Sağlayan Adımlar{" "}
               </h1>
-              <h2 className="w-[600px] text-start font-poppins pt-12 text-xl mt-2">
+              <h2 className="w-[600px] text-start text-gray-600 font-poppins pt-12 text-xl mt-2">
                 GREENSTEP projesi, Trakya Üniversitesi Uygulamalı Bilimler
                 Fakültesi bünyesinde hayata geçirilecek, geri dönüşümü ve
                 sürdürülebilir yaşamı teşvik etmeyi amaçlayan kapsamlı bir
