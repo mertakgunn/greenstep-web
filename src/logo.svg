@@ -1,0 +1,7 @@
+<div>
+<img
+          src="../assets/greensteplogo.png"
+          alt="GreenStep Logo"
+          className="flex justify-between ml-10 mt-2"
+        />
+</div>
