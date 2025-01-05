@@ -417,7 +417,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[#F8FFF7] h-full mt-24 p-16 ">
+      <div className="bg-[#F8FFF7] h-full p-16 ">
         <div className="bg-[#F8FFF7] w-full h-full flex items-center justify-center">
           <div className="">
             <div className="">
