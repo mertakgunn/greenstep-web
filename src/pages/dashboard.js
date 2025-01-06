@@ -39,15 +39,24 @@ const Dashboard = () => {
             <h1 className="font-poppins text-white text-md">Profil</h1>
           </Link>
 
-          <Link to="/#" className="flex items-center space-x-4 ml-4">
+          <Link
+            to="/"
+            className="flex items-center space-x-4 ml-4"
+            onClick={(e) => {
+              const confirmed = window.confirm(
+                "Çıkış yapmak istediğinize emin misiniz?"
+              );
+              if (!confirmed) {
+                e.preventDefault();
+              }
+            }}
+          >
             <img
               src="../assets/dimage4.png"
               alt="leaderboard"
-              className="w-6 h-6 mt-80 "
+              className="w-6 h-6 mt-80"
             />
-            <h1 className="font-poppins text-white text-md mt-80  ">
-              Çıkış Yap
-            </h1>
+            <h1 className="font-poppins text-white text-md mt-80">Çıkış Yap</h1>
           </Link>
         </div>
       </div>
@@ -68,11 +77,13 @@ const Dashboard = () => {
           </div>
           <div className="bg-white border-2 rounded-xl w-44 h-16 mt-6">
             <div className="flex">
-              <img
-                src="../assets/ornekprofil.png"
-                alt="plus"
-                className="w-8 h-8 mt-4 ml-2"
-              />
+              <Link to="/profile" className="flex items-center space-x-4 ml-4">
+                <img
+                  src="../assets/gsprofile.png"
+                  alt="plus"
+                  className="w-8 h-8 mt-4 ml-2"
+                />
+              </Link>
               <div className="flex flex-col justify-center items-center mt-3 mr-1">
                 <h2 className="font-poppins text-xs text-gray-400 mr-7">
                   Prof. Dr.
@@ -81,12 +92,6 @@ const Dashboard = () => {
                   Erdem Uçar
                 </h1>
               </div>
-              <IoMdNotificationsOutline className="mt-6" size={20} />
-              <img
-                src="../assets/numbertwo.png"
-                alt="plus"
-                className="w-3 h-3 mt-5 absolute ml-36"
-              />
             </div>
           </div>
         </div>

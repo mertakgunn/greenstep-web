@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
-import { IoMdNotificationsOutline } from "react-icons/io";
 import { useState, useEffect } from "react";
 import { getAuth, updateAuth } from "../services/auth/index";
 export default function Profile() {
@@ -83,15 +82,24 @@ export default function Profile() {
             <h1 className="font-poppins text-white text-md ">Profil</h1>
           </Link>
 
-          <Link to="/" className="flex items-center space-x-4 ml-4">
+          <Link
+            to="/"
+            className="flex items-center space-x-4 ml-4"
+            onClick={(e) => {
+              const confirmed = window.confirm(
+                "Çıkış yapmak istediğinize emin misiniz?"
+              );
+              if (!confirmed) {
+                e.preventDefault();
+              }
+            }}
+          >
             <img
               src="../assets/dimage4.png"
               alt="leaderboard"
-              className="w-6 h-6 mt-80 "
+              className="w-6 h-6 mt-80"
             />
-            <h1 className="font-poppins text-white text-md mt-80  ">
-              Çıkış Yap
-            </h1>
+            <h1 className="font-poppins text-white text-md mt-80">Çıkış Yap</h1>
           </Link>
         </div>
       </div>
@@ -113,7 +121,7 @@ export default function Profile() {
           <div className="bg-white border-2 rounded-xl w-44 h-16 mt-6">
             <div className="flex">
               <img
-                src="../assets/ornekprofil.png"
+                src="../assets/gsprofile.png"
                 alt="plus"
                 className="w-8 h-8 mt-4 ml-2"
               />
@@ -125,12 +133,6 @@ export default function Profile() {
                   Erdem Uçar
                 </h1>
               </div>
-              <IoMdNotificationsOutline className="mt-6" size={20} />
-              <img
-                src="../assets/numbertwo.png"
-                alt="plus"
-                className="w-3 h-3 mt-5 absolute ml-36"
-              />
             </div>
           </div>
         </div>
@@ -140,14 +142,15 @@ export default function Profile() {
           </h1>
           <div className="flex justify-center mt-8">
             <img
-              src="../assets/kisiexmp.png"
+              src="../assets/gsprofile.png"
               alt="kisiexmp"
               className="w-24 h-24 "
             />
+
             <img
               src="../assets/duzenle.png"
               alt="duzenle"
-              className="w-8 h-8 mt-16 ml-16 absolute"
+              className="w-8 h-8 mt-16 ml-16 absolute cursor-pointer"
             />
           </div>
           <div className="">

@@ -10,8 +10,12 @@ const Information = ({ title, description, button }) => {
           className="p-6"
         />
         <div className="bg-white w-full p-12 mr-8 rounded-3xl flex flex-col space-y-6">
-          <h1 className="text-2xl font-semibold text-start font-poppins">{title}</h1>
-          <h2 className="text-lg text-start font-poppins">{description}</h2>
+          <h1 className="text-2xl font-semibold text-start font-poppins text-black">
+            {title}
+          </h1>
+          <h2 className="text-lg text-start font-poppins text-gray-500">
+            {description}
+          </h2>
 
           {button && (
             <a
