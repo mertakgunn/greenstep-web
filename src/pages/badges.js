@@ -85,11 +85,8 @@ const Badges = () => {
                 />
               </Link>
               <div className="flex flex-col justify-center items-center mt-3 mr-1">
-                <h2 className="font-poppins text-xs text-gray-400 mr-7">
-                  Prof. Dr.
-                </h2>
-                <h1 className="font-poppins text-sm text-black ml-2">
-                  Erdem Uçar
+                <h1 className="font-poppins text-sm text-gray-400 ml-2">
+                  Mert Akgün
                 </h1>
               </div>
             </div>
